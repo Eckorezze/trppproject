@@ -1,0 +1,31 @@
+@startuml
+rectangle "Menu" as r1
+rectangle "QR code" as r2
+rectangle "Weather" as r3
+rectangle "Tasks" as r4
+rectangle "Generate password" as r5
+rectangle "Random number" as r6
+rectangle "Entertainments" as r7
+rectangle "INFO" as r8
+
+usecase "Simple QR code" as u1
+usecase "WiFi QR code" as u2
+usecase "Set your\nlocation" as u3
+usecase "Add task" as u4
+usecase "Dice" as u5
+
+r1 --> r2
+r1 --> r3
+r1 --> r4
+r1 --> r5
+r1 --> r6
+r1 --> r7
+r1 --> r8
+
+r2 --> u1
+r2 --> u2
+r3 --> u3
+r4 --> u4
+r7 --> u5
+
+@enduml
